@@ -67,7 +67,10 @@ export default function Intro() {
 				<span className='font-bold'>4 years</span> of experience. I thrive on
 				creating <span className='italic'>web applications</span>. My expertise
 				lies in <span className='underline'>Python (FastAPI/Flask)</span> and{' '}
-				<span className='underline'>Typescript/JavaScript (Next.js)</span>.
+				<span className='underline'>
+					Typescript/JavaScript (Next.js/React/Node.js/NestJS)
+				</span>
+				.
 			</motion.h1>
 			<motion.div
 				className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
