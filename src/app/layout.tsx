@@ -1,3 +1,4 @@
+import Header from '@/components/header';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -29,7 +30,7 @@ export default function RootLayout({
 				sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
 				'
 				></div>
-
+				<Header />
 				{children}
 			</body>
 		</html>
