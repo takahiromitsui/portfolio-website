@@ -7,6 +7,8 @@ type SelectionName = (typeof links)[number]['name'];
 type ActiveSectionContextType = {
 	activeSection: SelectionName;
 	setActiveSection: React.Dispatch<React.SetStateAction<SelectionName>>;
+	timeOfLastClick: number;
+	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
@@ -19,9 +21,17 @@ export default function ActiveSectionProvider({
 	children: React.ReactNode;
 }) {
 	const [activeSection, setActiveSection] = useState<SelectionName>('Home');
+	const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
 
 	return (
-		<ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+		<ActiveSectionContext.Provider
+			value={{
+				activeSection,
+				setActiveSection,
+				timeOfLastClick,
+				setTimeOfLastClick,
+			}}
+		>
 			{children}
 		</ActiveSectionContext.Provider>
 	);
