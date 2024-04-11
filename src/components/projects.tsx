@@ -1,22 +1,12 @@
 'use client';
 import SectionHeading from '@/components/section-heading';
 import { projectsData } from '@/lib/data';
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import Project from '@/components/project';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Projects() {
-	const { ref, inView } = useInView({
-		threshold: 0.5,
-	});
-	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
-	useEffect(() => {
-		if (inView && Date.now() - timeOfLastClick > 1000) {
-			setActiveSection('Projects');
-		}
-	}, [inView, setActiveSection, timeOfLastClick]);
+	const { ref } = useSectionInView('Projects', 0.5);
 
 	return (
 		<section ref={ref} className='scroll-mt-28' id='projects'>
