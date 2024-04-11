@@ -2,9 +2,10 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import facethefactsImg from '../../public/face-the-facts.jpg';
+import geospatialmlImg from '../../public/geospatial-ml.jpg';
+import cracwarholImg from '../../public/crac-warhol.jpg';
+import rustdnaconverterImg from '../../public/rust-dna-converter.jpg';
 
 export const links = [
 	{
@@ -75,6 +76,7 @@ export const projectsData = [
 			'Typescript',
 			'React',
 		],
+		imageUrl: facethefactsImg,
 	},
 	{
 		title: 'Geospatial ML',
@@ -88,18 +90,21 @@ export const projectsData = [
 			'Google Colab',
 			'OpenCV',
 		],
+		imageUrl: geospatialmlImg,
 	},
 	{
 		title: 'CRAC/Warhol',
 		description:
 			'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionize advertising on social media through NFT (Non-fungible Token) technology.',
 		tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
+		imageUrl: cracwarholImg,
 	},
 	{
 		title: 'Rust DNA Converter',
 		description:
 			'I created a DNA converter to convert a DNA sequence into an RNA sequence and to translate it into an amino acid sequence. All codes are written in Rust.',
 		tags: ['Rust'],
+		imageUrl: rustdnaconverterImg,
 	},
 ] as const;
 
