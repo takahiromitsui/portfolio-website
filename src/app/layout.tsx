@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import ActiveSectionProvider from '@/context/active-section-context';
 import ThemeContextProvider from '@/context/theme-context';
+import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
 					<ActiveSectionProvider>
 						<Header />
 						{children}
+						<Footer />
 					</ActiveSectionProvider>
 				</ThemeContextProvider>
 			</body>
