@@ -36,28 +36,35 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Graduated bootcamp',
-		location: 'Miami, FL',
+		title: 'Full-stack Developer',
+		location: 'Berlin, Germany',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-		icon: React.createElement(LuGraduationCap),
-		date: '2019',
+			"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
+		icon: React.createElement(CgWorkAlt),
+		date: '2021 - 2024',
 	},
 	{
 		title: 'Front-End Developer',
-		location: 'Orlando, FL',
+		location: 'Berlin, Germany',
 		description:
-			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-		icon: React.createElement(CgWorkAlt),
-		date: '2019 - 2021',
+			'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
+		icon: React.createElement(FaReact),
+		date: '2022',
 	},
 	{
-		title: 'Full-Stack Developer',
+		title: 'Backend Developer',
 		location: 'Houston, TX',
 		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-		icon: React.createElement(FaReact),
-		date: '2021 - present',
+			'I worked as a backend developer for 6 months. I developed GraphQL API from scratch using Flask and PostgreSQL. In this project, I implemented authentication and authorisation protocols with Microsoft Azure AD and integrated machine learning model on the backend server.',
+		icon: React.createElement(CgWorkAlt),
+		date: '2023',
+	},
+	{
+		title: 'Graduated University',
+		location: 'Berlin, Germany',
+		description: 'I graduated after 4 years of studying software engineering.',
+		icon: React.createElement(LuGraduationCap),
+		date: '2024',
 	},
 ] as const;
 
