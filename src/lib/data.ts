@@ -37,7 +37,7 @@ export const links = [
 export const experiencesData = [
 	{
 		title: 'Full-stack Developer',
-		location: 'Berlin, Germany',
+		location: 'Face The Facts - Berlin, Germany',
 		description:
 			"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
 		icon: React.createElement(CgWorkAlt),
@@ -45,7 +45,7 @@ export const experiencesData = [
 	},
 	{
 		title: 'Front-End Developer',
-		location: 'Berlin, Germany',
+		location: 'Foundamental - Berlin, Germany',
 		description:
 			'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
 		icon: React.createElement(FaReact),
@@ -53,7 +53,7 @@ export const experiencesData = [
 	},
 	{
 		title: 'Backend Developer',
-		location: 'Houston, TX',
+		location: 'Siemens Mobility - Berlin, Germany',
 		description:
 			'I worked as a backend developer for 6 months. I developed GraphQL API from scratch using Flask and PostgreSQL. In this project, I implemented authentication and authorisation protocols with Microsoft Azure AD and integrated machine learning model on the backend server.',
 		icon: React.createElement(CgWorkAlt),
@@ -61,7 +61,7 @@ export const experiencesData = [
 	},
 	{
 		title: 'Graduated University',
-		location: 'Berlin, Germany',
+		location: 'CODE University of Applied Sciences - Berlin, Germany',
 		description: 'I graduated after 4 years of studying software engineering.',
 		icon: React.createElement(LuGraduationCap),
 		date: '2024',
