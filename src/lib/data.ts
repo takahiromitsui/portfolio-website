@@ -84,6 +84,7 @@ export const projectsData = [
 			'React',
 		],
 		imageUrl: facethefactsImg,
+		url: 'https://facethefacts.app',
 	},
 	{
 		title: 'Geospatial ML',
@@ -98,6 +99,7 @@ export const projectsData = [
 			'OpenCV',
 		],
 		imageUrl: geospatialmlImg,
+		url: 'https://github.com/emely3h/Geospatial_ML',
 	},
 	{
 		title: 'CRAC/Warhol',
@@ -105,6 +107,7 @@ export const projectsData = [
 			'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionize advertising on social media through NFT (Non-fungible Token) technology.',
 		tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
 		imageUrl: cracwarholImg,
+		url: 'https://github.com/ProjectWarhol/backend',
 	},
 	{
 		title: 'Rust DNA Converter',
@@ -112,6 +115,7 @@ export const projectsData = [
 			'I created a DNA converter to convert a DNA sequence into an RNA sequence and to translate it into an amino acid sequence. All codes are written in Rust.',
 		tags: ['Rust'],
 		imageUrl: rustdnaconverterImg,
+		url: 'https://github.com/takahiromitsui/rust-dna-converter',
 	},
 ] as const;
 

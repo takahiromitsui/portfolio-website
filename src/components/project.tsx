@@ -12,6 +12,7 @@ export default function Project({
 	description,
 	tags,
 	imageUrl,
+	url,
 }: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
@@ -22,6 +23,7 @@ export default function Project({
 	const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
 	return (
+		<a href={url}>
 		<motion.div
 			ref={ref}
 			style={{
@@ -46,6 +48,10 @@ export default function Project({
 							</li>
 						))}
 					</ul>
+					{/* {landingPageUrl ? (
+						<a href={landingPageUrl}>Landing Page Link</a>
+					) : null}
+					{githubUrl ? <a href={githubUrl}>Github</a> : null} */}
 				</div>
 				{imageUrl ? (
 					<Image
@@ -68,5 +74,6 @@ export default function Project({
 				) : null}
 			</section>
 		</motion.div>
+		</a>
 	);
 }
