@@ -8,7 +8,7 @@ import SubmitBtn from '@/components/submit-btn';
 // import toast from 'react-hot-toast';
 
 export default function Contact() {
-	const { ref } = useSectionInView('Contact');
+	const { ref } = useSectionInView('About');// change it temporally
 
 	return (
 		<motion.section
