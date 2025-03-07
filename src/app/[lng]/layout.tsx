@@ -15,7 +15,7 @@ export default function RootLayout({
 	};
 }) {
 	return (
-		<html lang={lng} dir={dir(lng)}>
+		<html lang={lng} dir={dir(lng)} suppressHydrationWarning>
 			<head />
 			<body>{children}</body>
 		</html>
