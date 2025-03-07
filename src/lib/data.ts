@@ -37,6 +37,14 @@ export const links = [
 export const experiencesData = [
 	{
 		title: 'Full-stack Developer',
+		location: 'Luup Systems - Berlin, Germany',
+		description:
+			"I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.",
+		icon: React.createElement(CgWorkAlt),
+		date: '2024',
+	},
+	{
+		title: 'Full-stack Developer',
 		location: 'Face The Facts - Berlin, Germany',
 		description:
 			"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
@@ -133,6 +141,8 @@ export const skillsData = [
 	'NestJS',
 	'React',
 	'Next.js',
+	'Angular',
+	'SolidJS',
 	'Git',
 	'Tailwind',
 	'Prisma',

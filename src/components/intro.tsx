@@ -72,7 +72,7 @@ export default function Intro() {
 			>
 				<span className='font-bold'>Hello, I&apos;m Takahiro.</span> I&apos;m a{' '}
 				<span className='font-bold'>Full-stack developer</span> with{' '}
-				<span className='font-bold'>3 years</span> of experience. I thrive on
+				<span className='font-bold'>4 years</span> of experience. I thrive on
 				creating <span className='italic'>web applications</span>. My expertise
 				lies in <span className='underline'>Python (FastAPI/Flask)</span> and{' '}
 				<span className='underline'>
