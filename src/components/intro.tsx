@@ -8,10 +8,16 @@ import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { useTranslation } from '../app/i18n/client';
 
-export default function Intro() {
+export default function Intro({
+	params: { lng },
+}: {
+	params: { lng: string };
+}) {
 	const { ref } = useSectionInView('Home');
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+	const { t } = useTranslation(lng, 'intro');
 	return (
 		<section
 			ref={ref}
@@ -70,15 +76,20 @@ export default function Intro() {
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}
 			>
-				<span className='font-bold'>Hello, I&apos;m Takahiro.</span> I&apos;m a{' '}
-				<span className='font-bold'>Full-stack developer</span> with{' '}
-				<span className='font-bold'>4 years</span> of experience. I thrive on
-				creating <span className='italic'>web applications</span>. My expertise
-				lies in <span className='underline'>Python (FastAPI/Flask)</span> and{' '}
+				<span className='font-bold'>{t('greeting')}</span> {t('role')}
+				<span className='font-bold'>{t('fullstack')}</span> {t('role2')}
+				<span className='font-bold'>{t('years', { years: 4 })}</span>
+				{t('experience')} {t('thrive')}
+				<span className='italic'>{t('web')}</span>
+				. {t('expertise')}
+				<span className='underline'>
+					Python (FastAPI/Flask)
+				</span>
+				and{' '}
 				<span className='underline'>
 					Typescript/JavaScript (Next.js/React/Node.js/NestJS)
 				</span>
-				.
+				{t('end')}
 			</motion.h1>
 			<motion.div
 				className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

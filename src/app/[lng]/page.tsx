@@ -6,10 +6,14 @@ import Projects from '@/components/projects';
 import SectionDivider from '@/components/section-divider';
 import Skills from '@/components/skills';
 
-export default function Home() {
+export default function Home({
+	params: { lng },
+}: {
+	params: { lng: string };
+}) {
 	return (
 		<main className='flex flex-col items-center px-4'>
-			<Intro />
+			<Intro params={{ lng }} />
 			<SectionDivider />
 			<About />
 			<Projects />
