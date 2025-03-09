@@ -4,10 +4,16 @@ import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { useTranslation } from '../app/i18n/client';
 
-export default function Header() {
+export default function Header({
+	params: { lng },
+}: {
+	params: { lng: string };
+}) {
 	const { activeSection, setActiveSection, setTimeOfLastClick } =
 		useActiveSectionContext();
+	const { t } = useTranslation(lng, 'navigation');
 	return (
 		<header className='z-[999] relative'>
 			<motion.div
@@ -38,7 +44,7 @@ export default function Header() {
 									setTimeOfLastClick(Date.now());
 								}}
 							>
-								{link.name}
+								{t(link.name)}
 								{link.name === activeSection && (
 									<motion.span
 										className='bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800'

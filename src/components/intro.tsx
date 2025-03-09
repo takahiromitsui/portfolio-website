@@ -15,7 +15,7 @@ export default function Intro({
 }: {
 	params: { lng: string };
 }) {
-	const { ref } = useSectionInView('Home');
+	const { ref } = useSectionInView('home');
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 	const { t } = useTranslation(lng, 'intro');
 	return (
