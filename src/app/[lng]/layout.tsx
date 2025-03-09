@@ -10,6 +10,8 @@ import ThemeSwitch from '@/components/theme-switch';
 
 const inter = Inter({ subsets: ['latin'] });
 
+type Params = Promise<{ lng: string }>;
+
 export async function generateStaticParams() {
 	return languages.map(lng => ({ lng }));
 }
@@ -20,15 +22,15 @@ export const metadata = {
 		'Takahiro is a full-stack developer with 3+ years of experience based in Berlin/Germany.',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
-	params: { lng },
+	params,
 }: {
 	children: React.ReactNode;
-	params: {
-		lng: string;
-	};
+	params: Params;
 }) {
+	const { lng } = await params;
+
 	return (
 		<html
 			lang={lng}
