@@ -6,11 +6,10 @@ import Projects from '@/components/projects';
 import SectionDivider from '@/components/section-divider';
 import Skills from '@/components/skills';
 
-export default function Home({
-	params: { lng },
-}: {
-	params: { lng: string };
-}) {
+type Params = Promise<{ lng: string }>;
+
+export default async function Home({ params }: { params: Params }) {
+	const { lng } = await params;
 	return (
 		<main className='flex flex-col items-center px-4'>
 			<Intro params={{ lng }} />
