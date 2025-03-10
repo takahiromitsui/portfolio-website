@@ -6,7 +6,6 @@ import { BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/active-section-context';
 import { useTranslation } from '../app/i18n/client';
 
 export default function Intro({

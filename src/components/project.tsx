@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[keyof typeof projectsData][number];
 
 export default function Project({
 	title,
@@ -19,16 +19,16 @@ export default function Project({
 		target: ref,
 		offset: ['0 1', '1.33 1'],
 	});
-	const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-	const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
 	return (
 		<a href={url}>
 			<motion.div
 				ref={ref}
 				style={{
-					scale: scaleProgess,
-					opacity: opacityProgess,
+					scale: scaleProgress,
+					opacity: opacityProgress,
 				}}
 				className='group mb-3 sm:mb-8 last:mb-0'
 			>

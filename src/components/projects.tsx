@@ -4,19 +4,27 @@ import { projectsData } from '@/lib/data';
 import { Fragment } from 'react';
 import Project from '@/components/project';
 import { useSectionInView } from '@/lib/hooks';
+import { useTranslation } from '../app/i18n/client';
 
-export default function Projects() {
+export default function Projects({
+	params: { lng },
+}: {
+	params: { lng: string };
+}) {
 	const { ref } = useSectionInView('projects', 0.5);
+	const { t } = useTranslation(lng, 'projects');
 
 	return (
 		<section ref={ref} className='scroll-mt-28 mb-28' id='projects'>
-			<SectionHeading>My Projects</SectionHeading>
+			<SectionHeading>{t('title')}</SectionHeading>
 			<div>
-				{projectsData.map((project, index) => (
-					<Fragment key={index}>
-						<Project {...project} />
-					</Fragment>
-				))}
+				{projectsData[lng as keyof typeof projectsData].map(
+					(project, index) => (
+						<Fragment key={index}>
+							<Project {...project} />
+						</Fragment>
+					)
+				)}
 			</div>
 		</section>
 	);

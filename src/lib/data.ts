@@ -39,7 +39,7 @@ export const experiencesData = [
 		title: 'Full-stack Developer',
 		location: 'Luup Systems - Berlin, Germany',
 		description:
-			"I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.",
+			'I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.',
 		icon: React.createElement(CgWorkAlt),
 		date: '2024',
 	},
@@ -76,56 +76,108 @@ export const experiencesData = [
 	},
 ] as const;
 
-export const projectsData = [
-	{
-		title: 'Face The Facts',
-		description:
-			"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
-		tags: [
-			'Python',
-			'FastAPI',
-			'PostgreSQL',
-			'Docker',
-			'AWS',
-			'Redis Pub/Sub',
-			'Typescript',
-			'React',
-		],
-		imageUrl: facethefactsImg,
-		url: 'https://facethefacts.app',
-	},
-	{
-		title: 'Geospatial ML',
-		description:
-			'I contributed to it as a machine learning engineer. Developed a convolutional neural network (U-Net) for Semantic Image Segmentation of satellite images.',
-		tags: [
-			'Python',
-			'TensorFlow',
-			'Matplotlib',
-			'Jupyter',
-			'Google Colab',
-			'OpenCV',
-		],
-		imageUrl: geospatialmlImg,
-		url: 'https://github.com/emely3h/Geospatial_ML',
-	},
-	{
-		title: 'CRAC/Warhol',
-		description:
-			'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionize advertising on social media through NFT (Non-fungible Token) technology.',
-		tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
-		imageUrl: cracwarholImg,
-		url: 'https://github.com/ProjectWarhol/backend',
-	},
-	{
-		title: 'Rust DNA Converter',
-		description:
-			'I created a DNA converter to convert a DNA sequence into an RNA sequence and to translate it into an amino acid sequence. All codes are written in Rust.',
-		tags: ['Rust'],
-		imageUrl: rustdnaconverterImg,
-		url: 'https://github.com/takahiromitsui/rust-dna-converter',
-	},
-] as const;
+export const projectsData = {
+	en: [
+		{
+			title: 'Face The Facts',
+			description:
+				"I worked as a full-stack developer for three years. It is a mobile app to show politicians' information by scanning politicians' posters.",
+			tags: [
+				'Python',
+				'FastAPI',
+				'PostgreSQL',
+				'Docker',
+				'AWS',
+				'Redis Pub/Sub',
+				'Typescript',
+				'React',
+			],
+			imageUrl: facethefactsImg,
+			url: 'https://facethefacts.app',
+		},
+		{
+			title: 'Geospatial ML',
+			description:
+				'I contributed to it as a machine learning engineer. Developed a convolutional neural network (U-Net) for Semantic Image Segmentation of satellite images.',
+			tags: [
+				'Python',
+				'TensorFlow',
+				'Matplotlib',
+				'Jupyter',
+				'Google Colab',
+				'OpenCV',
+			],
+			imageUrl: geospatialmlImg,
+			url: 'https://github.com/emely3h/Geospatial_ML',
+		},
+		{
+			title: 'CRAC/Warhol',
+			description:
+				'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionize advertising on social media through NFT (Non-fungible Token) technology.',
+			tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
+			imageUrl: cracwarholImg,
+			url: 'https://github.com/ProjectWarhol/backend',
+		},
+		{
+			title: 'Rust DNA Converter',
+			description:
+				'I created a DNA converter to convert a DNA sequence into an RNA sequence and to translate it into an amino acid sequence. All codes are written in Rust.',
+			tags: ['Rust'],
+			imageUrl: rustdnaconverterImg,
+			url: 'https://github.com/takahiromitsui/rust-dna-converter',
+		},
+	],
+	jp: [
+		{
+			title: 'Face The Facts',
+			description:
+				'3年間フルスタック開発者として貢献し、政治家のポスターをスキャンすることで、その政治家の過去の投票行動や履歴書などの情報を表示するモバイルアプリ開発しました。',
+			tags: [
+				'Python',
+				'FastAPI',
+				'PostgreSQL',
+				'Docker',
+				'AWS',
+				'Redis Pub/Sub',
+				'Typescript',
+				'React',
+			],
+			imageUrl: facethefactsImg,
+			url: 'https://facethefacts.app',
+		},
+		{
+			title: 'Geospatial ML',
+			description:
+				'機械学習エンジニアとして貢献したプロジェクトで衛星画像のセマンティックセグメンテーションのための畳み込みニューラルネットワーク（U-Net）を開発しました。',
+			tags: [
+				'Python',
+				'TensorFlow',
+				'Matplotlib',
+				'Jupyter',
+				'Google Colab',
+				'OpenCV',
+			],
+			imageUrl: geospatialmlImg,
+			url: 'https://github.com/emely3h/Geospatial_ML',
+		},
+		{
+			title: 'CRAC/Warhol',
+			description:
+				'DevOpsエンジニアとスマートコントラクトエンジニアの両方として貢献したプロジェクトは、NFT（非代替性トークン）技術を通じたソーシャルメディアでの広告システムを開発しました。',
+			tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
+			imageUrl: cracwarholImg,
+			url: 'https://github.com/ProjectWarhol/backend',
+		},
+		{
+			title: 'Rust DNA Converter',
+			description:
+				'個人のプロジェクトでDNA配列をRNA配列に変換し、アミノ酸配列に翻訳するDNAコンバーターを作成しました。すべてのコードはRustで書かれています。',
+			tags: ['Rust'],
+			imageUrl: rustdnaconverterImg,
+			url: 'https://github.com/takahiromitsui/rust-dna-converter',
+		},
+	],
+} as const;
 
 export const skillsData = [
 	'HTML',
