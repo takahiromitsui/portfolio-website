@@ -20,7 +20,7 @@ export default function ActiveSectionProvider({
 }: {
 	children: React.ReactNode;
 }) {
-	const [activeSection, setActiveSection] = useState<SelectionName>('Home');
+	const [activeSection, setActiveSection] = useState<SelectionName>('home');
 	const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
 
 	return (

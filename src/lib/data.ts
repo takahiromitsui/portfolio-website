@@ -40,7 +40,7 @@ export const experiencesData = {
 			title: 'Full-stack Developer',
 			location: 'Luup Systems - Berlin, Germany',
 			description:
-				'I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.',
+				'I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimise performance and enhance the user experience.',
 			icon: React.createElement(CgWorkAlt),
 			date: '2024',
 		},
@@ -157,7 +157,7 @@ export const projectsData = {
 		{
 			title: 'CRAC/Warhol',
 			description:
-				'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionize advertising on social media through NFT (Non-fungible Token) technology.',
+				'I contributed to it as both a DevOps and smart contract engineer. CRAC/Warhol project aims to revolutionise advertising on social media through NFT (Non-fungible Token) technology.',
 			tags: ['DigitalOcean', 'NGINX', 'PostgreSQL', 'Node.js'],
 			imageUrl: cracwarholImg,
 			url: 'https://github.com/ProjectWarhol/backend',
