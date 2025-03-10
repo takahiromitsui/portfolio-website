@@ -47,7 +47,7 @@ export default async function RootLayout({
 					<ActiveSectionProvider>
 						<Header params={{ lng }} />
 						{children}
-						<Footer />
+						<Footer params={{ lng }} />
 						<ThemeSwitch />
 					</ActiveSectionProvider>
 				</ThemeContextProvider>
