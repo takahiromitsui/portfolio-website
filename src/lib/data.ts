@@ -34,47 +34,91 @@ export const links = [
 	// },
 ] as const;
 
-export const experiencesData = [
-	{
-		title: 'Full-stack Developer',
-		location: 'Luup Systems - Berlin, Germany',
-		description:
-			'I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.',
-		icon: React.createElement(CgWorkAlt),
-		date: '2024',
-	},
-	{
-		title: 'Full-stack Developer',
-		location: 'Face The Facts - Berlin, Germany',
-		description:
-			"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
-		icon: React.createElement(CgWorkAlt),
-		date: '2021 - 2024',
-	},
-	{
-		title: 'Front-End Developer',
-		location: 'Foundamental - Berlin, Germany',
-		description:
-			'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
-		icon: React.createElement(FaReact),
-		date: '2022',
-	},
-	{
-		title: 'Backend Developer',
-		location: 'Siemens Mobility - Berlin, Germany',
-		description:
-			'I worked as a backend developer for 6 months. I developed GraphQL API from scratch using Flask and PostgreSQL. In this project, I implemented authentication and authorisation protocols with Microsoft Azure AD and integrated machine learning model on the backend server.',
-		icon: React.createElement(CgWorkAlt),
-		date: '2023',
-	},
-	{
-		title: 'Graduated University',
-		location: 'CODE University of Applied Sciences - Berlin, Germany',
-		description: 'I graduated after 4 years of studying software engineering.',
-		icon: React.createElement(LuGraduationCap),
-		date: '2024',
-	},
-] as const;
+export const experiencesData = {
+	en: [
+		{
+			title: 'Full-stack Developer',
+			location: 'Luup Systems - Berlin, Germany',
+			description:
+				'I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimize performance and enhance the user experience.',
+			icon: React.createElement(CgWorkAlt),
+			date: '2024',
+		},
+		{
+			title: 'Full-stack Developer',
+			location: 'Face The Facts - Berlin, Germany',
+			description:
+				"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
+			icon: React.createElement(CgWorkAlt),
+			date: '2021 - 2024',
+		},
+		{
+			title: 'Front-End Developer',
+			location: 'Foundamental - Berlin, Germany',
+			description:
+				'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
+			icon: React.createElement(FaReact),
+			date: '2022',
+		},
+		{
+			title: 'Backend Developer',
+			location: 'Siemens Mobility - Berlin, Germany',
+			description:
+				'I worked as a backend developer for 6 months. I developed GraphQL API from scratch using Flask and PostgreSQL. In this project, I implemented authentication and authorisation protocols with Microsoft Azure AD and integrated machine learning model on the backend server.',
+			icon: React.createElement(CgWorkAlt),
+			date: '2023',
+		},
+		{
+			title: 'Graduated University',
+			location: 'CODE University of Applied Sciences - Berlin, Germany',
+			description:
+				'I graduated after 4 years of studying software engineering.',
+			icon: React.createElement(LuGraduationCap),
+			date: '2024',
+		},
+	],
+	jp: [
+		{
+			title: 'フルスタックエンジニア',
+			location: 'Luup Systems - ベルリン、ドイツ',
+			description:
+				'フルスタックエンジニアとして、EU企業持続可能性報告指令（CSRD）のためのAI統合Webアプリケーションの開発に携わりました。Angular、SolidJS、gRPCを活用してパフォーマンスを最適化し、ユーザー体験を向上させました。',
+			icon: React.createElement(CgWorkAlt),
+			date: '2024',
+		},
+		{
+			title: 'フルスタックエンジニア',
+			location: 'Face The Facts - ベルリン、ドイツ',
+			description:
+				'3年間、フルスタックエンジニアとして働きました。政治家のポスターをスキャンすることで、その政治家の過去の投票行動や履歴書などの情報を表示するモバイルアプリです。',
+			icon: React.createElement(CgWorkAlt),
+			date: '2021 - 2024',
+		},
+		{
+			title: 'フロントエンドエンジニア',
+			location: 'Foundamental - ベルリン、ドイツ',
+			description:
+				'5ヶ月間フロントエンドエンジニアとして働きました。Next.js、Typescriptを使用して社内Webアプリケーションを開発し、GraphQL APIをApollo Serverと統合しました。',
+			icon: React.createElement(FaReact),
+			date: '2022',
+		},
+		{
+			title: 'フルスタックエンジニア',
+			location: 'Siemens Mobility - ベルリン、ドイツ',
+			description:
+				'6ヶ月間フルスタックエンジニアとして働きました。FlaskとPostgreSQLを使用してGraphQL APIをゼロから開発しました。このプロジェクトでは、Microsoft Azure ADを使用した認証・認可プロトコルを実装し、機械学習モデルをバックエンドサーバーに統合しました。',
+			icon: React.createElement(CgWorkAlt),
+			date: '2023',
+		},
+		{
+			title: '大学卒業',
+			location: 'CODE University of Applied Sciences - ベルリン、ドイツ',
+			description: 'ソフトウェアエンジニアリングを4年間学び、卒業しました。',
+			icon: React.createElement(LuGraduationCap),
+			date: '2024',
+		},
+	],
+} as const;
 
 export const projectsData = {
 	en: [
@@ -131,7 +175,7 @@ export const projectsData = {
 		{
 			title: 'Face The Facts',
 			description:
-				'3年間フルスタック開発者として貢献し、政治家のポスターをスキャンすることで、その政治家の過去の投票行動や履歴書などの情報を表示するモバイルアプリ開発しました。',
+				'3年間フルスタックエンジニアとして貢献し、政治家のポスターをスキャンすることで、その政治家の過去の投票行動や履歴書などの情報を表示するモバイルアプリ開発しました。',
 			tags: [
 				'Python',
 				'FastAPI',

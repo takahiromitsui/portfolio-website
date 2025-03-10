@@ -16,7 +16,7 @@ export default async function Home({ params }: { params: Params }) {
 			<About params={{ lng }} />
 			<Projects params={{ lng }} />
 			<Skills params={{ lng }} />
-			<Experience />
+			<Experience params={{ lng }} />
 		</main>
 	);
 }
