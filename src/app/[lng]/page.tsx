@@ -15,7 +15,7 @@ export default async function Home({ params }: { params: Params }) {
 			<SectionDivider />
 			<About params={{ lng }} />
 			<Projects params={{ lng }} />
-			<Skills />
+			<Skills params={{ lng }} />
 			<Experience />
 		</main>
 	);
