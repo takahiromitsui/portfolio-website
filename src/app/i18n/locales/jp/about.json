@@ -1,0 +1,12 @@
+{
+  "about": "私について",
+  "after": "東京医科歯科大学の分子生物学の修士号を取得した後、プログラミングへの情熱に従ってドイツに移住しました。CODE University of Applied Sciences（ドイツの大学）では、3つのプロジェクトに積極的に参加し、2社（ドイツ）にて学生エンジニアとして働きました。卒業後、ドイツのスタートアップ（Luup Systems GmbH）でフルタイムのソフトウェアエンジニアとして働いた経験があります。",
+  "passion": "私はプログラミングを使って問題解決をすることに情熱をもっており、",
+  "passion2": "ユーザーまたは企業の抱える問題をアプリケーションという形で届けることにやりがいを感じています。私の主な技術スタックは",
+  "techStack": " FastAPI, Flask, Node.js, NestJs, Next.js, React, PostgreSQLです。",
+  "additionalProficiency": "得意な言語はTypeScriptとPythonです。新しい技術習にも積極的に常に積極的に取り組んでいます。現在、",
+  "additionalProficiency2": "フルタイム勤務のソフトウェアエンジニアの仕事",
+  "additionalProficiency3": "を積極的に探しています。",
+  "notCoding": "プログラミングをしていない時は",
+  "bouldering": "ボルダリングやクライミングに熱中しています。"
+}

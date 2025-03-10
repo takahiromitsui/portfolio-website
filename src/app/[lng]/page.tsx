@@ -13,7 +13,7 @@ export default async function Home({ params }: { params: Params }) {
 		<main className='flex flex-col items-center px-4'>
 			<Intro params={{ lng }} />
 			<SectionDivider />
-			<About />
+			<About params={{ lng }} />
 			<Projects />
 			<Skills />
 			<Experience />
