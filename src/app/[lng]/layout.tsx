@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export const metadata = {
 	title: 'Takahiro Mitsui| Portfolio',
 	description:
-		'Takahiro is a full-stack developer with 3+ years of experience based in Berlin/Germany.',
+		'Takahiro is a full-stack developer with 4 years of experience based in Berlin/Germany.',
 };
 
 export default async function RootLayout({
