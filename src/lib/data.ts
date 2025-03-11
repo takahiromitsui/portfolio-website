@@ -45,20 +45,20 @@ export const experiencesData = {
 			date: '2024',
 		},
 		{
+			title: 'Graduated University',
+			location: 'CODE University of Applied Sciences - Berlin, Germany',
+			description:
+				'I graduated after 4 years of studying software engineering.',
+			icon: React.createElement(LuGraduationCap),
+			date: '2024',
+		},
+		{
 			title: 'Full-stack Developer',
 			location: 'Face The Facts - Berlin, Germany',
 			description:
 				"I worked as a full-stack developer on this open-source project for three years. It is a mobile app to show politician's information by scanning politicians' posters.",
 			icon: React.createElement(CgWorkAlt),
 			date: '2021 - 2024',
-		},
-		{
-			title: 'Front-End Developer',
-			location: 'Foundamental - Berlin, Germany',
-			description:
-				'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
-			icon: React.createElement(FaReact),
-			date: '2022',
 		},
 		{
 			title: 'Backend Developer',
@@ -69,12 +69,12 @@ export const experiencesData = {
 			date: '2023',
 		},
 		{
-			title: 'Graduated University',
-			location: 'CODE University of Applied Sciences - Berlin, Germany',
+			title: 'Front-End Developer',
+			location: 'Foundamental - Berlin, Germany',
 			description:
-				'I graduated after 4 years of studying software engineering.',
-			icon: React.createElement(LuGraduationCap),
-			date: '2024',
+				'I worked as a front-end developer for 5 months. I developed an internal web application using Next.js, Typescript and integrated a GraphQL API with Apollo Server.',
+			icon: React.createElement(FaReact),
+			date: '2022',
 		},
 	],
 	jp: [
@@ -87,20 +87,19 @@ export const experiencesData = {
 			date: '2024',
 		},
 		{
+			title: '大学卒業',
+			location: 'CODE University of Applied Sciences - ベルリン、ドイツ',
+			description: 'ソフトウェアエンジニアリングを4年間学び、卒業しました。',
+			icon: React.createElement(LuGraduationCap),
+			date: '2024',
+		},
+		{
 			title: 'フルスタックエンジニア',
 			location: 'Face The Facts - ベルリン、ドイツ',
 			description:
 				'3年間、フルスタックエンジニアとして働きました。政治家のポスターをスキャンすることで、その政治家の過去の投票行動や履歴書などの情報を表示するモバイルアプリです。',
 			icon: React.createElement(CgWorkAlt),
 			date: '2021 - 2024',
-		},
-		{
-			title: 'フロントエンドエンジニア',
-			location: 'Foundamental - ベルリン、ドイツ',
-			description:
-				'5ヶ月間フロントエンドエンジニアとして働きました。Next.js、Typescriptを使用して社内Webアプリケーションを開発し、GraphQL APIをApollo Serverと統合しました。',
-			icon: React.createElement(FaReact),
-			date: '2022',
 		},
 		{
 			title: 'フルスタックエンジニア',
@@ -111,11 +110,12 @@ export const experiencesData = {
 			date: '2023',
 		},
 		{
-			title: '大学卒業',
-			location: 'CODE University of Applied Sciences - ベルリン、ドイツ',
-			description: 'ソフトウェアエンジニアリングを4年間学び、卒業しました。',
-			icon: React.createElement(LuGraduationCap),
-			date: '2024',
+			title: 'フロントエンドエンジニア',
+			location: 'Foundamental - ベルリン、ドイツ',
+			description:
+				'5ヶ月間フロントエンドエンジニアとして働きました。Next.js、Typescriptを使用して社内Webアプリケーションを開発し、GraphQL APIをApollo Serverと統合しました。',
+			icon: React.createElement(FaReact),
+			date: '2022',
 		},
 	],
 } as const;
