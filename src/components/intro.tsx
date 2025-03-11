@@ -16,13 +16,13 @@ export default function Intro({
 	const { ref } = useSectionInView('home');
 	const { t } = useTranslation(lng, 'intro');
 
-	const pdfs =
-		lng === 'en'
-			? [{ path: '/Takahiro.Mitsui.CV.pdf', label: 'CV' }]
-			: [
-					{ path: '/履歴書_三井貴洋.pdf', label: '履歴書' },
-					{ path: '/職務経歴書_三井貴洋.pdf', label: '職務経歴書' },
-			  ];
+	const isEnglish = t('download') === 'Download ';
+	const pdfs = isEnglish
+		? [{ path: '/Takahiro.Mitsui.CV.pdf', label: 'CV' }]
+		: [
+				{ path: '/履歴書_三井貴洋.pdf', label: '履歴書' },
+				{ path: '/職務経歴書_三井貴洋.pdf', label: '職務経歴書' },
+		  ];
 	return (
 		<section
 			ref={ref}
@@ -85,11 +85,8 @@ export default function Intro({
 				<span className='font-bold'>{t('fullstack')}</span> {t('role2')}
 				<span className='font-bold'>{t('years', { years: 4 })}</span>
 				{t('experience')} {t('thrive')}
-				<span className='italic'>{t('web')}</span>
-				. {t('expertise')}
-				<span className='underline'>
-					Python (FastAPI/Flask)
-				</span>
+				<span className='italic'>{t('web')}</span>. {t('expertise')}
+				<span className='underline'>Python (FastAPI/Flask)</span>
 				{t('and')}
 				<span className='underline'>
 					Typescript/JavaScript (Next.js/React/Node.js/NestJS)
@@ -111,7 +108,7 @@ export default function Intro({
 						href={pdf.path}
 						download
 					>
-						{lng === 'en'
+						{isEnglish
 							? `${t('download')} ${pdf.label}`
 							: `${pdf.label} ${t('download')}`}
 						<HiDownload className='opacity-60 group-hover:translate-y-1 transition' />

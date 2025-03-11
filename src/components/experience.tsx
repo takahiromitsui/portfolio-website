@@ -20,12 +20,14 @@ export default function Experience({
 	const { ref } = useSectionInView('experience', 0.5);
 	const { theme } = useTheme();
 	const { t } = useTranslation(lng, 'experience');
+	const isEnglish = t('title') === 'My Experience';
+	const lngSetting = isEnglish ? 'en' : 'jp';
 
 	return (
 		<section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
 			<SectionHeading>{t('title')}</SectionHeading>
 			<VerticalTimeline lineColor=''>
-				{experiencesData[lng as keyof typeof experiencesData].map(
+				{experiencesData[lngSetting as keyof typeof experiencesData].map(
 					(item, index) => (
 						<React.Fragment key={index}>
 							<VerticalTimelineElement

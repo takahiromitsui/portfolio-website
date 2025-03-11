@@ -49,7 +49,7 @@ export default function LanguageSwitcher({
 		await i18n.changeLanguage(language.code);
 		setCurrentLanguage(language);
 		setIsOpen(false);
-		router.refresh(); 
+		router.refresh();
 	};
 
 	return (
@@ -65,7 +65,7 @@ export default function LanguageSwitcher({
 			</button>
 
 			{isOpen && (
-				<div className='absolute right-5 bottom-full z-1000 mb-1 w-56 origin-bottom-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-800 dark:ring-gray-700'>
+				<div className='fixed sm:top-[4.5rem] top-[8rem] right-5 z-[1000] w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-gray-800 dark:ring-gray-700'>
 					<ul
 						className='py-1'
 						role='listbox'

@@ -13,12 +13,13 @@ export default function Projects({
 }) {
 	const { ref } = useSectionInView('projects', 0.5);
 	const { t } = useTranslation(lng, 'projects');
-
+	const isEnglish = t('title') === 'My Projects';
+	const lngSetting = isEnglish ? 'en' : 'jp';
 	return (
 		<section ref={ref} className='scroll-mt-28 mb-28' id='projects'>
 			<SectionHeading>{t('title')}</SectionHeading>
 			<div>
-				{projectsData[lng as keyof typeof projectsData].map(
+				{projectsData[lngSetting as keyof typeof projectsData].map(
 					(project, index) => (
 						<Fragment key={index}>
 							<Project {...project} />
