@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --line-color: #e5e7eb;
+}
+
+.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+@layer utilities {
+  .borderBlack {
+    border-width: 1px;
+    border-color: rgb(0 0 0 / 0.1);
+  }
+}
