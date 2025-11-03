@@ -18,10 +18,24 @@ export default function Intro({
 
   const isEnglish = t("download") === "Download ";
   const pdfs = isEnglish
-    ? [{ path: "/Takahiro.Mitsui.CV.pdf", label: "CV" }]
+    ? [
+        {
+          path: "/Takahiro.Mitsui.CV.pdf",
+          label: "CV",
+          filename: "Takahiro.Mitsui.CV.pdf",
+        },
+      ]
     : [
-        { path: "/履歴書_三井貴洋.pdf", label: "履歴書" },
-        { path: "/職務経歴書_三井貴洋.pdf", label: "職務経歴書" },
+        {
+          path: "/履歴書_三井貴洋.pdf",
+          label: "履歴書",
+          filename: "履歴書_三井貴洋.pdf",
+        },
+        {
+          path: "/職務経歴書_三井貴洋.pdf",
+          label: "職務経歴書",
+          filename: "職務経歴書_三井貴洋.pdf",
+        },
       ];
   return (
     <section
@@ -106,7 +120,7 @@ export default function Intro({
             key={pdf.path}
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             href={pdf.path}
-            download
+            download={pdf.filename}
           >
             {isEnglish
               ? `${t("download")} ${pdf.label}`
