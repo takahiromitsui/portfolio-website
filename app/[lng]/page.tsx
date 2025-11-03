@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -15,11 +16,7 @@ export default async function Home({ params }: { params: Params }) {
       <About params={{ lng }} />
       <Projects params={{ lng }} />
       <Skills params={{ lng }} />
-      {/*
-
-
-      
-      <Experience params={{ lng }} /> */}
+      <Experience params={{ lng }} />
     </main>
   );
 }
