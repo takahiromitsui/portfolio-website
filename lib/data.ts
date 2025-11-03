@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaHashnode } from "react-icons/fa6";
+import { SiZenn } from "react-icons/si";
 import facethefactsImg from "@/public/face-the-facts.jpg";
 import geospatialmlImg from "@/public/geospatial-ml.jpg";
 import cracwarholImg from "@/public/crac-warhol.jpg";
@@ -23,6 +25,10 @@ export const links = [
   {
     name: "projects",
     hash: "#projects",
+  },
+  {
+    name: "posts",
+    hash: "#posts",
   },
   {
     name: "skills",
@@ -231,6 +237,37 @@ export const projectsData = {
       tags: ["Rust"],
       imageUrl: rustdnaconverterImg,
       url: "https://github.com/takahiromitsui/rust-dna-converter",
+    },
+  ],
+} as const;
+
+export const postsData = {
+  en: [
+    {
+      title: "You Only Need 3 Commands to Build Custom React Components",
+      description:
+        "Discover how to efficiently build custom React components with Claude MCP, Figma, and shadcn/ui to meet tight deadlines.",
+      platform: "Hashnode",
+      platformIcon: React.createElement(FaHashnode),
+      tags: ["claude.ai", "figma", "React", "shadcn/ui"],
+      publishedDate: "11-2025",
+      url: "https://air-closet.hashnode.dev/preview/6905d81e473dddbf2c30f846",
+      language: "en",
+      readTime: "3 min read",
+    },
+  ],
+  jp: [
+    {
+      title: "わずか3コマンド？で作るReact Components",
+      description:
+        "Claude MCP、Figma、shadcn/uiを活用して、タイトな納期に対応するカスタムReactコンポーネントの効率的な構築方法を紹介します。",
+      platform: "Zenn",
+      platformIcon: React.createElement(SiZenn),
+      tags: ["Figma", "React", "Tailwind CSS", "shadcn/ui", "Claude"],
+      publishedDate: "2025-10",
+      url: "https://zenn.dev/aircloset/articles/bdf0b4187ba2e5",
+      language: "jp",
+      readTime: "3分",
     },
   ],
 } as const;
