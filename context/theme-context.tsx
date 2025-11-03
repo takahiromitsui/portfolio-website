@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, createContext, useContext } from "react";
+import { CookiesProvider } from "react-cookie";
 
 type Theme = "light" | "dark";
 
@@ -53,14 +54,16 @@ export default function ThemeContextProvider({
   }, [theme]);
 
   return (
-    <ThemeContext.Provider
-      value={{
-        theme,
-        toggleTheme,
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
+    <CookiesProvider>
+      <ThemeContext.Provider
+        value={{
+          theme,
+          toggleTheme,
+        }}
+      >
+        {children}
+      </ThemeContext.Provider>
+    </CookiesProvider>
   );
 }
 

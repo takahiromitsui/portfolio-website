@@ -1,0 +1,14 @@
+{
+	"greeting": "Hello, I'm Takahiro.",
+	"role":"I'm a ",
+	"fullstack": "Full-stack developer",
+	"role2":"with ",
+	"years": "{{years}} years ",
+	"experience": "of experience. ",
+	"thrive": "I thrive on creating ",
+	"web": "web applications",
+	"expertise": "My expertise lies in ",
+	"and": " and ",
+	"end":".",
+	"download": "Download "
+}

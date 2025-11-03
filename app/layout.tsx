@@ -5,10 +5,9 @@ import ThemeContextProvider from "@/context/theme-context";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionProvider from "@/context/active-section-context";
-// import ThemeContextProvider from "@/context/theme-context";
+import LanguageSwitcher from "@/components/language-switcher";
 // import Footer from "@/components/footer";
 // import ThemeSwitch from "@/components/theme-switch";
-// import LanguageSwitcher from "@/components/language-switcher";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,13 +46,12 @@ export default async function RootLayout({
           <div className="bg-[#fbe2e3] absolute -top-24 -z-10 right-44 h-125 w-125 rounded-full blur-[10rem] sm:w-275 dark:bg-[#946263]"></div>
           <div className="bg-[#dbd7fb] absolute -top-4 -z-10 -left-140 h-125 w-200 rounded-full blur-[10rem] sm:w-275 md:-left-132 lg:-left-112 xl:-left-60 2xl:-left-20 dark:bg-[#676394]"></div>
           <ActiveSectionProvider>
-            <></>
-            {/* <LanguageSwitcher params={{ lng }} />
+            <LanguageSwitcher params={{ lng }} />
+            {/*
             <Header params={{ lng }} />
             {children}
             <Footer params={{ lng }} />
             <ThemeSwitch />
-          </ActiveSectionProvider>
          */}
           </ActiveSectionProvider>
         </ThemeContextProvider>
