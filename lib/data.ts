@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import facethefactsImg from "../../public/face-the-facts.jpg";
-import geospatialmlImg from "../../public/geospatial-ml.jpg";
-import cracwarholImg from "../../public/crac-warhol.jpg";
-import rustdnaconverterImg from "../../public/rust-dna-converter.jpg";
+import facethefactsImg from "@/public/face-the-facts.jpg";
+import geospatialmlImg from "@/public/geospatial-ml.jpg";
+import cracwarholImg from "@/public/crac-warhol.jpg";
+import rustdnaconverterImg from "@/public/rust-dna-converter.jpg";
 
 export const links = [
   {

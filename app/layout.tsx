@@ -1,6 +1,6 @@
-// import { dir } from "i18next";
-// import { languages } from "../i18n/settings";
-// import Header from "@/components/header";
+import { dir } from "i18next";
+import { languages } from "@/i18n/settings";
+import Header from "@/components/header";
 import ThemeContextProvider from "@/context/theme-context";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -13,9 +13,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 type Params = Promise<{ lng: string }>;
 
-// export async function generateStaticParams() {
-//   return languages.map((lng) => ({ lng }));
-// }
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
 
 export const metadata = {
   title: "Takahiro Mitsui| Portfolio",
@@ -35,8 +35,8 @@ export default async function RootLayout({
   return (
     <html
       lang={lng}
-      // dir={dir(lng)}
-      // className="!scroll-smooth"
+      dir={dir(lng)}
+      className="scroll-smooth!"
       // suppressHydrationWarning
     >
       <body
@@ -47,9 +47,10 @@ export default async function RootLayout({
           <div className="bg-[#dbd7fb] absolute -top-4 -z-10 -left-140 h-125 w-200 rounded-full blur-[10rem] sm:w-275 md:-left-132 lg:-left-112 xl:-left-60 2xl:-left-20 dark:bg-[#676394]"></div>
           <ActiveSectionProvider>
             <LanguageSwitcher params={{ lng }} />
-            {/*
             <Header params={{ lng }} />
             {children}
+            {/*
+            
             <Footer params={{ lng }} />
             <ThemeSwitch />
          */}
