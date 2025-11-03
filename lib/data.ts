@@ -133,7 +133,7 @@ export const projectsData = {
         "React",
       ],
       imageUrl: facethefactsImg,
-      url: "https://facethefacts.app",
+      url: "https://github.com/FaceTheFacts/backend",
     },
     {
       title: "Geospatial ML",
