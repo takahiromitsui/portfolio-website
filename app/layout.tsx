@@ -6,8 +6,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionProvider from "@/context/active-section-context";
 import LanguageSwitcher from "@/components/language-switcher";
-// import Footer from "@/components/footer";
-// import ThemeSwitch from "@/components/theme-switch";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,12 +33,7 @@ export default async function RootLayout({
   const { lng } = await params;
 
   return (
-    <html
-      lang={lng}
-      dir={dir(lng)}
-      className="scroll-smooth!"
-      // suppressHydrationWarning
-    >
+    <html lang={lng} dir={dir(lng)} className="scroll-smooth!">
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
@@ -49,11 +44,8 @@ export default async function RootLayout({
             <LanguageSwitcher params={{ lng }} />
             <Header params={{ lng }} />
             {children}
-            {/*
-            
             <Footer params={{ lng }} />
             <ThemeSwitch />
-         */}
           </ActiveSectionProvider>
         </ThemeContextProvider>
       </body>
