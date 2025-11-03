@@ -34,6 +34,14 @@ export const experiencesData = {
   en: [
     {
       title: "Full-stack Developer",
+      location: "airCloset Inc. - Tokyo, Japan",
+      description:
+        "I am working as a Full-Stack Developer on the development of a rental fashion service. I also lead the launch of a new service as a lead engineer, determining the technical direction and guiding the team.",
+      icon: React.createElement(CgWorkAlt),
+      date: "2025 - Present",
+    },
+    {
+      title: "Full-stack Developer",
       location: "Luup Systems - Berlin, Germany",
       description:
         "I worked as a Full-Stack Developer, building an AI-integrated web application for the EU Corporate Sustainability Reporting Directive (CSRD). I leveraged Angular, SolidJS, and gRPC to optimise performance and enhance the user experience.",
@@ -74,6 +82,14 @@ export const experiencesData = {
     },
   ],
   jp: [
+    {
+      title: "フルスタックエンジニア",
+      location: "株式会社エアークローゼット - 東京、日本",
+      description:
+        "フルスタックエンジニアとして、レンタルファッションサービスの開発に携わっています。また、新規サービスをリードエンジニアとして立ち上げ、技術的な方向性を決定し、チームを指導しています。",
+      icon: React.createElement(CgWorkAlt),
+      date: "2025 - 現在",
+    },
     {
       title: "フルスタックエンジニア",
       location: "Luup Systems - ベルリン、ドイツ",
