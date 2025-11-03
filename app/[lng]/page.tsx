@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Intro from "@/components/intro";
+import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 
 type Params = Promise<{ lng: string }>;
@@ -11,10 +12,10 @@ export default async function Home({ params }: { params: Params }) {
       <Intro params={{ lng }} />
       <SectionDivider />
       <About params={{ lng }} />
-      {/* 
-      
-      
       <Projects params={{ lng }} />
+      {/*
+
+
       <Skills params={{ lng }} />
       <Experience params={{ lng }} /> */}
     </main>
