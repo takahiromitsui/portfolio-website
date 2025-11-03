@@ -1,3 +1,4 @@
+import About from "@/components/about";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 
@@ -9,9 +10,10 @@ export default async function Home({ params }: { params: Params }) {
     <main className="flex flex-col items-center px-4">
       <Intro params={{ lng }} />
       <SectionDivider />
+      <About params={{ lng }} />
       {/* 
       
-      <About params={{ lng }} />
+      
       <Projects params={{ lng }} />
       <Skills params={{ lng }} />
       <Experience params={{ lng }} /> */}
