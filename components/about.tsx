@@ -22,13 +22,12 @@ export default function About({
     >
       <SectionHeading>{t("about")}</SectionHeading>
       <p className="mb-3">
-        {t("after")}
+        {t("after")}{" "}
+        {t("current")}{" "}
         <span className="italic">{t("passion")}</span>
         {t("passion2")}
         <span className="font-medium">{t("techStack")}</span>
         {t("additionalProficiency")}
-        <span className="font-medium">{t("additionalProficiency2")}</span>
-        {t("additionalProficiency3")}
       </p>
 
       <p>
