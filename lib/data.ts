@@ -251,7 +251,7 @@ export const postsData = {
       platformIcon: React.createElement(FaHashnode),
       tags: ["claude.ai", "figma", "React", "shadcn/ui"],
       publishedDate: "11-2025",
-      url: "https://air-closet.hashnode.dev/preview/6905d81e473dddbf2c30f846",
+      url: "https://air-closet.hashnode.dev/you-only-need-3-commands-to-build-custom-react-components",
       language: "en",
       readTime: "3 min read",
     },
